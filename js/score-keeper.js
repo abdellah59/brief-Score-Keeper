@@ -32,3 +32,10 @@ function updateScores(player, display){
   return player;
 }
   
+p1Button.addEventListener("click", () =>{ p1Score = updateScores(p1Score, p1Display); });
+  
+p2Button.addEventListener("click", ()=>{ p2Score = updateScores(p2Score, p2Display);});
+
+limitInput.addEventListener("change", () =>{winningScore = parseInt(limitInput.value);reset();});
+  
+resetButton.addEventListener("click", reset);
