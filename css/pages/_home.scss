@@ -32,7 +32,7 @@ body {
 
     }
 
-    game-image {
+    .game-image {
         height: 400px;
         overflow: hidden;
   
@@ -89,3 +89,8 @@ body {
         }
     } 
 }
+
+.winner {
+    color: green;
+}
+  
