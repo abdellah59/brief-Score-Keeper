@@ -9,5 +9,26 @@ const limitInput = document.getElementById("limit");
 
 let p1Score = 0;
 let p2Score = 0;
-let winningScore = parseInt(limitInput.value);
+let playingTo = parseInt(limitInput.value);
 let isGameOver = false;
+
+
+function updateScores(player, display){
+
+    if(!isGameOver){
+
+      player++;
+
+      if (player ===playingTo){
+
+        isGameOver = true;
+        winnerDisplay.textContent = display === p1Display ? "Player One Wins!" : "Player Two Wins!";
+        display.classList.add("winner");
+      }
+
+      display.textContent = player;
+    }
+
+  return player;
+}
+  
