@@ -50,6 +50,6 @@ function reset(){
     p2Display.textContent = 0;
     p1Display.classList.remove("winner");
     p2Display.classList.remove("winner");
-    winnerDisplay.textContent = "Let's Play 🎉";
+    winnerDisplay.textContent = "Let's Play!";
   }
   
