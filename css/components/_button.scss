@@ -1,0 +1,35 @@
+.game-footer {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    button {
+      flex: 1;
+      height: 45px;
+      cursor: pointer;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+
+      &#p1button {
+        background-color: #49bfe3;
+      }
+
+      &#p2button {
+        background-color: #eba52b;
+      }
+
+      &#reset {
+        background-color: crimson;
+      }
+    }
+}
