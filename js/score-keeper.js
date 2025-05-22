@@ -10,18 +10,18 @@ const limitInput = document.getElementById("limit");
 let p1Score = 0;
 let p2Score = 0;
 let playingTo = parseInt(limitInput.value);
-let isGameOver = false;
+let gameOver = false;
 
 
 function updateScores(player, display){
 
-    if(!isGameOver){
+    if(!gameOver){
 
       player++;
 
       if (player ===playingTo){
 
-        isGameOver = true;
+        gameOver = true;
         winnerDisplay.textContent = display === p1Display ? "Player One Wins!" : "Player Two Wins!";
         display.classList.add("winner");
       }
@@ -36,6 +36,20 @@ p1Button.addEventListener("click", () =>{ p1Score = updateScores(p1Score, p1Disp
   
 p2Button.addEventListener("click", ()=>{ p2Score = updateScores(p2Score, p2Display);});
 
-limitInput.addEventListener("change", () =>{winningScore = parseInt(limitInput.value);reset();});
+limitInput.addEventListener("change", () =>{playingTo = parseInt(limitInput.value);reset();});
   
 resetButton.addEventListener("click", reset);
+
+
+function reset(){
+
+    gameOver = false;
+    p1Score =0;
+    p2Score =0;
+    p1Display.textContent =0;
+    p2Display.textContent = 0;
+    p1Display.classList.remove("winner");
+    p2Display.classList.remove("winner");
+    winnerDisplay.textContent = "Let's Play 🎉";
+  }
+  
