@@ -10,4 +10,24 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: whitesmoke;
 }
+
+.score-keeper{
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
   
+    .score-card {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}   
