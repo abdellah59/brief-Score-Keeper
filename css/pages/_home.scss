@@ -54,4 +54,38 @@ body {
           font-weight: bold;
         }
     }
-}   
+
+    .game-content {
+        padding: 1rem;
+  
+        h2 {
+          font-size: 3rem;
+          margin-bottom: 0.5rem;
+  
+          span {
+            font-weight: bold;
+          }
+        }
+  
+        p {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        input[type="number"] {
+            margin-top: 0.5rem;
+            padding: 0.3rem;
+            width: 80px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+    
+        #winner {
+            display: block;
+            margin-top: 0.75rem;
+            font-weight: bold;
+            color: #1c5f18;
+ 
+        }
+    } 
+}
