@@ -1,3 +1,6 @@
+"use strict";
+
+
 const p1Button = document.getElementById("p1button");
 const p2Button = document.getElementById("p2button");
 const resetButton = document.getElementById("reset");
