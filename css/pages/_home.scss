@@ -73,12 +73,11 @@ body {
     font-size: 4rem;
     font-weight: 700;
     color: $light-color;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: rgb(0, 0, 0);
     letter-spacing: 1px;
     margin-bottom: 20px;
-    background: linear-gradient(45deg, #ffd700, #ffed4e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: green;
+   
     background-clip: text;
     
     span {
@@ -91,8 +90,8 @@ body {
       
       
       &.winner {
-        background: rgba(255, 215, 0, 0.3);
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        background: rgba(13, 193, 10, 0.3);
+        box-shadow: 0 0 20px rgba(31, 166, 4, 0.6);
         transform: scale(1.1);
       }
     }
@@ -113,5 +112,34 @@ body {
     letter-spacing: 0.5px;
   }
   
+  input[type="number"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: $light-color;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-align: center;
+    width: 80px;
+    
+    &:focus {
+      outline: none;
+      border-color: $accent-color;
+    }
+  }
   
+  #winner {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-shadow:  rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    color: $accent-color;
+    margin-top: 20px;
+    display: block;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 2px solid rgba(7, 80, 16, 0.3);
+  }
 }
