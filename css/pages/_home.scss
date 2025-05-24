@@ -32,10 +32,9 @@ body {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     
+}
 
- }
-
- .game-image {
+.game-image {
     
   height: 200px;
   background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
@@ -44,28 +43,31 @@ body {
   align-items: center;
   
   img {
-    text-align: center;
-    padding: 30px 20px 20px;
-    background: rgba(0, 0, 0, 0.2);
+    max-width: 60%;
+    height: auto;
+    background: (0 4px rgba(0, 0, 0, 0.3)8px );
   }
 } 
 
-  .game-header {
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid grey;
+.game-header{
   
-      h1 {
-        font-size: 1.5rem;
-        text-align: center;
-        font-weight: bold;
-      }
-    }
+  text-align: center;
+  padding: 30px 20px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $light-color;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    margin: 0;
+  }
+}
 
-  .game-content {
-    padding: 1rem;
-    text-align: center;
-
+.game-content {
+  padding: 40px 30px;
+  text-align: center;
   
     h2 {
       font-size: 3rem;
@@ -105,7 +107,7 @@ body {
  
     }
   } 
-}
+
 
 .winner {
   color: green;
