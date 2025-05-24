@@ -9,7 +9,7 @@
 body {
 
   font-family: 'Open Sans', sans-serif;
-  background-color: whitesmoke;
+  background: rgb(4, 49, 89);  
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -89,6 +89,7 @@ body {
       margin: 0 15px;
       min-width: 80px;
       
+      
       &.winner {
         background: rgba(255, 215, 0, 0.3);
         box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
@@ -96,4 +97,21 @@ body {
       }
     }
   }
-} 
+  
+  p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  label {
+    color: $light-color;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  
+}
