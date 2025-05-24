@@ -15,7 +15,7 @@ Il s'agit une page web  permettant de suivre les scores de deux joueurs. Elle af
 
 ### En ligne : 
 
-Voici le lien : [Page Score Keeper](https://abdellah59.github.io/brief-shopping-list/)
+Voici le lien : [Page Score Keeper](https://abdellah59.github.io/brief-Score-Keeper/)
 
 ### En local : 
 
