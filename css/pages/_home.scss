@@ -69,47 +69,31 @@ body {
   padding: 40px 30px;
   text-align: center;
   
-    h2 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      padding: 1rem;
-      border: 2px solid red;
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $light-color;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    span {
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 10px;
-      text-align: center;
-      background-color: #f9f9f9;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
-      span {
-        font-weight: bold;
+      margin: 0 15px;
+      min-width: 80px;
+      
+      &.winner {
+        background: rgba(255, 215, 0, 0.3);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        transform: scale(1.1);
       }
     }
-  
-    p {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    input[type="number"] {
-      margin-top: 0.5rem;
-      padding: 0.3rem;
-      width: 80px;
-      border-radius: 5px;
-      border: 1px solid grey;
-    }
-    
-    #winner {
-      display: flex;
-      text-align: center;
-      font-size: 2rem;
-      margin-top: 0.75rem;
-      font-weight: bold;
-      color: #1c5f18;
- 
-    }
-  } 
-
-
-.winner {
-  color: green;
-}
-  
+  }
+} 
