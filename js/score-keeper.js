@@ -25,7 +25,7 @@ function updateScores(player, display){
       if (player ===playingTo){
 
         gameOver = true;
-        winnerDisplay.textContent = display === p1Display ? "Player One Wins!" : "Player Two Wins!";
+        winnerDisplay.textContent = display === p1Display ? "Player 1 Wins!" : "Player 2 Wins!";
         display.classList.add("winner");
       }
 
