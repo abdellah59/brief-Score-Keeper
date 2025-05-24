@@ -1,0 +1,54 @@
+.game-footer {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  
+  button {
+    border: none;
+    border-radius: 8px;
+    color: $light-color;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 12px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+    &#p1button {
+      background: $player1-color;
+      
+      &:hover {
+        background: rgb(41, 152, 192);
+      }
+    }
+    
+    &#p2button {
+      background:  $player2-color;
+      
+      &:hover {
+        background: rgb(194, 155, 16);
+      }
+    }
+    
+    &#reset {
+      background: crimson;
+      grid-column: 1 / -1;
+      margin-top: 10px;
+      
+      &:hover {
+        background: rgb(188, 56, 12);
+      }
+    }
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}

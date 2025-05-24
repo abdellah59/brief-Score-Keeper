@@ -1,0 +1,145 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+body {
+
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(4, 49, 89);  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.score-keeper{
+
+  width: 100%;
+  max-width: 800px;
+    
+}
+.score-card {
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.game-image {
+    
+  height: 200px;
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    max-width: 60%;
+    height: auto;
+    background: (0 4px rgba(0, 0, 0, 0.3)8px );
+  }
+} 
+
+.game-header{
+  
+  text-align: center;
+  padding: 30px 20px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $light-color;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    margin: 0;
+  }
+}
+
+.game-content {
+  padding: 40px 30px;
+  text-align: center;
+  
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $light-color;
+    text-shadow: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    background: green;
+   
+    background-clip: text;
+    
+    span {
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      margin: 0 15px;
+      min-width: 80px;
+      
+      
+      &.winner {
+        background: rgba(13, 193, 10, 0.3);
+        box-shadow: 0 0 20px rgba(31, 166, 4, 0.6);
+        transform: scale(1.1);
+      }
+    }
+  }
+  
+  p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  label {
+    color: $light-color;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  input[type="number"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: $light-color;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-align: center;
+    width: 80px;
+    
+    &:focus {
+      outline: none;
+      border-color: $accent-color;
+    }
+  }
+  
+  #winner {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-shadow:  rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    color: $accent-color;
+    margin-top: 20px;
+    display: block;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 2px solid rgba(7, 80, 16, 0.3);
+  }
+}

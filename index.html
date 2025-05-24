@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -24,9 +24,44 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+  <main class="score-keeper">
+
+    <section class="score-card">
+
+      <figure class="game-image">
+
+        <img src="./img/player-versus-player.png" alt="Player 1 vs Player 2 : Game">
+
+      </figure>    
+
+      <header class="game-header">
+
+        <h1>Score Keeper</h1>
+
+      </header>
+
+      <section class="game-content">
+
+        <h2><span id="p1Score">0</span> - <span id="p2Score">0</span></h2>
+        <p>Use the buttons below to play.</p>
+
+        <label for="limit">Playing to</label>
+        <input type="number" id="limit" min="1" value="3">
+        <p><strong id= "winner">Let's Play!</strong></p>
+
+      </section>
+
+      <footer class="game-footer">
+
+        <button id="p1button">+1 Player One</button>
+        <button id="p2button">+1 Player Two</button>
+        <button id="reset">Reset</button>
+
+      </footer>
+
+    </section>
+  </main>
+  <script src="./js/score-keeper.js"></script>
 
 </body>
 
